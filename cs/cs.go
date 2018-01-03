@@ -143,7 +143,7 @@ func run(command, hostname, id, login, path, port, timeout, copy, disku,
 	top1, tr, tri, tty, uname, vm *bool, ddir int, f *os.File) string {
 
 	hostname = strings.Trim(hostname, "\n")
-	batchmode := "-oBatchMode=yes"
+	batchmode := "-oBatchMode=no"
 	strict := "-oStrictHostKeyChecking=no"
 	tout := "-oConnectTimeout=" + timeout
 	flag := "-"
